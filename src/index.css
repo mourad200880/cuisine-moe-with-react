@@ -1,0 +1,421 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix::after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    margin: 0 auto;
+    width: 108rem;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #060606;
+    font-weight: bold;
+}
+h1{
+    font-size: 8rem;
+    text-transform: capitalize;
+    text-align-last: justify;
+}
+button{
+  background-color: #FF8903;
+  color: aliceblue;
+  text-align: center;
+}
+.paddingBase{
+  padding: 1rem;
+
+}
+.btn{
+  border: 1px solid #FF8903;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.fab{
+  padding: 1rem;
+  font-size: 2rem;
+}
+.hidden{
+  display: none;
+}
+
+.colorBase{
+  color: #FF8903;
+}
+.borderBase{
+  border: 2px solid azure;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+main{
+    width: 100%;
+    height: 100%;
+    }
+    /*header section*/
+main > header {
+    width: 100%;
+    height: 10rem; 
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: center;
+    align-items: center;
+    
+}
+header nav{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+}
+header #logo{
+    padding: 1rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+header nav *{ 
+   padding: 1rem;
+}
+header form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+header .humburgerMenu{
+    display: none;
+}
+section{
+    clear: both;
+    margin: 2rem 15rem;
+}
+section *{
+    padding: 0 0 2rem 1rem;
+}
+section form > input{
+    width: 50%;
+}
+section form input + button{
+    width: 10%;
+    border: 0.1rem solid azure;
+    border-left: none;
+    align-items: center; 
+}
+section form input{
+  border: 0.1rem solid azure;
+    border-right: none;
+}
+section h1{
+    width: 50%;
+}
+/*second page*/
+main + .second_page{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    text-align: justify;
+
+  }
+body main + .second_page article{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   font-size: 2rem;
+}
+body main + .second_page article .articleContent h2{
+  margin-top: 0;
+}
+body main + .second_page article .articleContent{
+  width: 60%;
+}
+/* body main + .second_page article .articleContent > *{
+  margin: 0 auto;
+
+} */
+
+body main + .second_page article h2{
+    font-size: 6rem;
+}
+body main + .second_page article span{
+    color: #FF8903;
+}  
+/*third section*/
+.third_section{
+    width: 100%;
+    background-color: rgba(241, 246, 247, 1);
+    margin: 0;
+    color: #000;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.third_section section{
+    width: 80%;
+    height: 50%;
+}
+.third_section > section{
+  margin: .8rem 0 0 0;
+  text-align: center;
+}
+.third_section h2{
+    margin: 0;
+    font-size: 4rem;        ;
+}
+.third_section ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.third_section ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.third_section ul li a:hover{
+    color: #FF8903;
+    text-decoration: underline;
+}
+
+.third_section_subSection ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.third_section_subSection ul li a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.third_section_subSection ul li a img{
+  padding: 1rem 0 0 0;
+  display: block;
+  width: 100%;
+  height: 25rem;
+}
+/*fourth section*/
+.fourth_section{
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+ 
+
+}
+
+
+.fourth_section h3{
+  font-size: 3rem;
+}
+.fourth_section_one{
+  margin: 0;
+  
+}
+.fourth_section_one ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-weight: bold;
+}
+.fourth_section_one ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start ;
+  justify-content: start;
+}
+.fourth_section_one ul li span{
+  font-size: 2rem;
+}
+.fourth_section_one .videoContainer{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.fourth_section_one .videoContainer .icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fourth_section_two{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fourth_section .fourth_section_two img{
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  padding: 0;
+
+}
+.fourth_section_two > *{
+  width: 100%;
+
+}
+.fourth_section_two span{
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fourth_section_two .rate{
+  text-align: center;
+}
+
+
+/*footer section*/
+
+
+
+
+
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+main{
+    
+    background-size: cover;
+}
+main > header {
+    background-color: azure;
+    color: #060606;
+    opacity: 0.8;
+
+
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
+    opacity: 0.8;
+
+}
+.fourth_section .fourth_section_one div i{
+  text-align: center;
+}  
+
+.fourth_section .fourth_section_one div p{
+  color: #FF8903;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+
+
+/*icons*/
+.fourth_section .fourth_section_one div .fas{
+  border: 2px solid orange;
+  border-radius: 3rem;
+  color: #FF8903;
+  text-align: center;
+  padding: 1rem;
+}
+.fa-arrow-alt-circle-right{
+  background-color: #FF8903;
+  color: #ffffff;
+  font-size: large;
+  opacity: 0.8;
+  border-left: 1px solid gray;
+}
+/******************************************
+/* MediaQueries STYLES
+/*******************************************/
+@media screen and (max-width: 900px) {
+  main > header nav{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+  }
+  header a{
+      align-self: flex-start;
+      margin-top: 1rem;
+  }
+  header nav ul, header nav form{
+      display: none;
+  }
+  header nav ul{
+      width: 100%;
+  }
+  header nav ul li{
+      border-bottom: 2px solid #FF8903;
+  }
+  header{
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+  }
+  header .humburgerMenu{
+      display: block;
+      align-self: flex-end;
+  }
+  .mobileVersion{
+      height: 200px;
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+  .mobileVersion nav{
+      display: grid;
+  }
+
+  .fa-x{
+      color: #E4E9ED;
+  }
+
+  header nav .show{
+      display: block;
+  }
+  .grow{
+      height: 40rem;
+  }
+  
+}
+
