@@ -5,6 +5,7 @@ import SecondSection from './secondSection';
 import ThirdSection from './thirdSection';
 import FourthSection from './FourthSection';
 import M from './m';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
     <SecondSection></SecondSection>
     <ThirdSection></ThirdSection>
     <FourthSection></FourthSection>
+    <Footer />
+
     </>
   );
 }

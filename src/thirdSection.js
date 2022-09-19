@@ -1,5 +1,5 @@
 import React from "react";
-import FourthSection from "./FourthSection";
+
 import img1 from "./image/img1.jpg"
 import img2 from "./image/img2.jpg"
 import img3 from "./image/img3.jpg"
@@ -25,14 +25,14 @@ function ThirdSection(){
         </section>
         <section className="third_section_subSection">
             <ul>
-                <li><a href="#"><img src="img1" alt=""/></a></li>
-                <li><a href="#"><img src="img2" alt=""/></a></li>
-                <li><a href="#"><img src="img3" alt=""/></a></li>
-                <li><a href="#"><img src="img4" alt=""/></a></li>
-                <li><a href="#"><img src="img5" alt=""/></a></li>
-                <li><a href="#"><img src="img6" alt=""/></a></li>
-                <li><a href="#"><img src="img7" alt=""/></a></li>
-                <li><a href="#"><img src="img8" alt=""/></a></li>
+                <li><a href="#"><img src={img1} alt=""/></a></li>
+                <li><a href="#"><img src={img2} alt=""/></a></li>
+                <li><a href="#"><img src={img3} alt=""/></a></li>
+                <li><a href="#"><img src={img4} alt=""/></a></li>
+                <li><a href="#"><img src={img5} alt=""/></a></li>
+                <li><a href="#"><img src={img6} alt=""/></a></li>
+                <li><a href="#"><img src={img7} alt=""/></a></li>
+                <li><a href="#"><img src={img8} alt=""/></a></li>
             </ul>
 
         </section>
@@ -42,4 +42,4 @@ function ThirdSection(){
     )
 }
 
-export default FourthSection;
+export default ThirdSection;

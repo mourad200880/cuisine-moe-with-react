@@ -1,3 +1,10 @@
+:root{
+  --primary-color : #fff;
+  --secondary-color : #060606;
+  --aditional-color: #3a3939;
+  --top-color : #f0ffff;
+}
+
 .fourth_section::after {
     content: "";
     background-size: cover;
@@ -9,3 +16,157 @@
     position: absolute;
     z-index: -1;   
   }
+
+  /************footer*******************/
+footer {
+  background-color: var(--top-color);
+  color: var(--secondary-color);
+  opacity: 0.8;
+  margin-top: 2rem;
+  grid-template-rows: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+
+}
+footer > *{
+  font-family: 'Cinzel', sans-serif;
+}
+.hidden{
+  display: none;
+}
+/*footer sectionOne*/
+.sectionOne{
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns:  1fr 1fr;
+  justify-content: center;
+}
+.sectionOne  h3 a{
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+/*footer firstSubsectionOne*/
+.firstSubSectionOne{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: var(--aditional-color);
+  font-size: 1.4rem;
+}
+
+.firstSubSectionOne h3::after{
+  display: block;
+  content: "";
+  width: 30px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  margin: 20px 0 25px 0;
+}
+.socials{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.socials a{
+  width: 4.2rem;
+  height: 4.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*footer secondSubsectionOne*/
+.secondSubSectionOne{
+  margin: 0;
+}
+.secondSubSectionOne span{
+  color: var(--secondary-color);
+}
+.secondSubSectionOne h3::after{
+  display: block;
+  content: "";
+  width: 30px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  margin: 20px 0 25px 0;
+}
+.secondSubSectionOne .hours::before{
+  content: "\e082";
+  font-family: 'Font Awesome 5 Free';
+  vertical-align: middle;
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  margin-right: 1.5rem;
+}
+.secondSubSectionOne .phone::before{
+  content: "\f095";
+  font-family: 'Font Awesome 5 Free'; 
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  margin-right: 1.5rem;
+}
+.secondSubSectionOne .location::before{
+  content: "\f124";
+  font-family: 'Font Awesome 5 Free';
+  color: var(--secondary-color);
+  vertical-align: middle;
+  font-size: 1.3rem;
+  margin-right: 1.5rem;
+}
+.secondSubSectionOne .email::before{
+  content: "\f0e0";
+  font-family: 'Font Awesome 5 Free';
+  vertical-align: middle;
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  margin-right: 1.5rem;
+}
+.info{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  font-size: 1.3rem ;
+}
+
+
+
+.thirdSubSectionOne h3::after{
+  display: block;
+  content: "";
+  width: 3rem;
+  height: .4rem;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  margin: 20px 0 25px 0;
+}
+/*footer sectionTwo*/
+.sectionTwo{
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--aditional-color);
+  border-top: .1rem solid #ccc;
+
+}
+.sectionTwo ul{
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.sectionTwo p{
+  text-align: center;
+}
+.sectionTwo ul li a{
+  text-decoration: none;
+  color: var(--aditional-color);
+  font-size: 1.1rem;
+
+}
