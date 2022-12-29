@@ -7,7 +7,7 @@ function Footer(){
     <footer>
         <section className="sectionOne">
             <section className="firstSubSectionOne">
-                <h3><a href="#">About Us</a></h3>
+                <h3><a href="#about">About Us</a></h3>
                 <a href="#" id="logo" className="colorBase">レストランのキッチン</a>
                 <p>moe cuisine is a japanese restaurant with all the japanese food culture on the click of a button.</p>
                 <div className="socials">

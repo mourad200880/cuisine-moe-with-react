@@ -419,3 +419,35 @@ header nav ul li a:hover{
   
 }
 
+@media screen and (max-width: 960px) {
+  /* Second section */
+  main + .second_page{
+    justify-content: start;;
+  }
+  body main + .second_page article{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .articleContent span{
+    font-size: 1.4rem;
+  }
+  #about h2{
+    font-size: 1.8rem;
+  }
+  #about p{
+    font-size: 1.8rem;
+  }
+
+  /* thirdSection */
+  .third_section{
+
+  }
+  .third_section_subSection ul li a img{
+    width: 35%;
+    height: 10rem;
+  }
+
+}
+

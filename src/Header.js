@@ -5,7 +5,7 @@ function Header(){
 
         <>
             <header>
-            <a href="#" id="logo" className="colorBase">レストランのキッチン</a>
+            <a href="#about" id="logo" className="colorBase">レストランのキッチン</a>
             <nav>
                 <span className="humburgerMenu">
                     <i className="fas fa-bars hidden colorBase"></i>

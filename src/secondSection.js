@@ -5,10 +5,10 @@ function SecondSection(){
     return (
         <>
             <section className="second_page borderBase" style={
-                { background : `url(${background})`}
+                { background : `#f0ffff`}
             }>
         <article>
-            <div className="articleContent">
+            <div className="articleContent" id="about">
                 <span>About Us</span>
                 <h2>Discover Our <br/> Restaurant Story</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam saepe incidunt, 
