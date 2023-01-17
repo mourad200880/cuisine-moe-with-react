@@ -1,10 +1,10 @@
 import './App.css';
-import Main from './Main';
-import SecondSection from './secondSection';
-import ThirdSection from './thirdSection';
-import FourthSection from './FourthSection';
-import M from './m';
-import Footer from './Footer';
+import Main from '../src/components/Main';
+import SecondSection from '../src/components/secondSection';
+import ThirdSection from '../src/components/thirdSection';
+import FourthSection from '../src/components/FourthSection';
+import M from '../src/components/m';
+import Footer from '../src/components/Footer';
 
 function App() {
   return (
